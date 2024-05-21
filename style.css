@@ -1,0 +1,125 @@
+ body, h1, a {
+    margin: 0;
+     padding: 0; 
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+} 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: lightblue;
+    margin: 0;
+}
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    color:rgb(82, 157, 255);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    width:40px;
+    color: rgb(82, 157, 255);
+    background-color:#fff ; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #81beff;
+}
+
+/* quiz styling */
+.quiz-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width:100%;
+}
+.quiz {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+.option {
+    display: flex; /* Make the div a flex container */
+    align-items: center; /* Vertically center the content */
+  }
+.option-btn {
+    flex: 1; /* Allow button to take up remaining space */
+    text-align: left; /* Align text within button to the left */
+    height:65px;
+    text-align: center;
+    font-size: medium;
+    margin-bottom: 5px;
+
+  }
+#options-index {
+    padding: 5px ; /* Add padding for content within the span */
+    background-color:rgb(39, 132, 255) ; /* Set background color */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 3px; /* Add rounded corners */
+    display: inline-block; /* Ensure inline behavior for proper spacing */
+    height:40px;
+    width: 50px;
+    margin-bottom: 5px;
+    padding-top: 20px;
+  }
+  .option-btn.correct {
+    background-color:  rgb(157, 253, 157);
+    color: black;
+}
+
+.option-btn.incorrect {
+    background-color: rgb(255, 147, 147);
+    color: black;
+}
+
+#Progress{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#hud-item {
+    flex: 1;
+    text-align: center;
+}
+
+.remainingQ{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.hud-main-text {
+    font-size: 24px;
+}
+
+#progressBar {
+    background-color: #e0e0df;
+    border-radius: 10px;
+    height: 20px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+#progressBarFull {
+    background-color: green;
+    border-radius: 10px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.2s;
+}
